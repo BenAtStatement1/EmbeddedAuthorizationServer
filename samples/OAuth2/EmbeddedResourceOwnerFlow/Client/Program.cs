@@ -8,8 +8,9 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            var response = GetToken();
-            CallService(response.AccessToken);
+            TokenResponse tok = GetToken();
+            Console.WriteLine("token:" + tok.AccessToken);
+            CallService(tok.AccessToken);
         }
 
         private static TokenResponse GetToken()
@@ -27,6 +28,7 @@ namespace Client
             var response = client.GetStringAsync(new Uri("http://localhost/api/identity")).Result;
 
             Console.WriteLine(response);
+            Console.ReadLine();
         }
     }
 }

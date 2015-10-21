@@ -9,9 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{D6C073E6-3699-444A-B2D4-485B598F0384}"
 	ProjectSection(SolutionItems) = preProject
+		IdentityController.curl.bat = IdentityController.curl.bat
 		..\..\..\..\..\..\..\..\allabout\ASP.NET\IIS APPPool-appPoolSiteName.png = ..\..\..\..\..\..\..\..\allabout\ASP.NET\IIS APPPool-appPoolSiteName.png
+		Katana-Embedding a simple Username_Password Authorization Server in Web API v2 _ leastprivilege.pdf = Katana-Embedding a simple Username_Password Authorization Server in Web API v2 _ leastprivilege.pdf
 		..\..\..\..\..\..\..\..\allabout\ASP.NET\Oauth2-password-granttype-browser-username-password-POSTMAN-parameters.png = ..\..\..\..\..\..\..\..\allabout\ASP.NET\Oauth2-password-granttype-browser-username-password-POSTMAN-parameters.png
 		setupnotes.txt = setupnotes.txt
+		todo.txt = todo.txt
 	EndProjectSection
 EndProject
 Global
