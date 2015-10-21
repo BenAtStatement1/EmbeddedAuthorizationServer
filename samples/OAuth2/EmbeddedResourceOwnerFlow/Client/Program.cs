@@ -15,7 +15,7 @@ namespace Client
         private static TokenResponse GetToken()
         {
             var client = new OAuth2Client(
-                new Uri("http://localhost:2727/token"));
+                new Uri("http://localhost/token"));
 
             return client.RequestResourceOwnerPasswordAsync("bob", "bob").Result;
         }
@@ -24,7 +24,7 @@ namespace Client
         {
             var client = new HttpClient();
             client.SetBearerToken(token);
-            var response = client.GetStringAsync(new Uri("http://localhost:2727/api/identity")).Result;
+            var response = client.GetStringAsync(new Uri("http://localhost/api/identity")).Result;
 
             Console.WriteLine(response);
         }

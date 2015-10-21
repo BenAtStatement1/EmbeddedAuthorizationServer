@@ -1,0 +1,8 @@
+1. add new site with physical path C:\Users\ben_000\Source\Repos\Thinktecture.IdentityModel\samples\OAuth2\EmbeddedResourceOwnerFlow
+2. turn off other sites
+3. give user IIS apppool\<sitename> access to physical path.
+4. use postman to get a token at http:\\localhost\token
+
+
+original repo:
+https://github.com/IdentityModel/Thinktecture.IdentityModel.git

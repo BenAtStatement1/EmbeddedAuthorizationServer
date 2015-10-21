@@ -17,7 +17,9 @@ namespace EmbeddedAuthorizationServer.Provider
         {
             // validate user credentials (demo!)
             // user credentials should be stored securely (salted, iterated, hashed yada)
-            if (context.UserName != context.Password)
+            // using a browser like Postman following oauth2 password granttype and
+            // set grant_type=password, username and password
+            if (context.UserName != null && context.UserName != context.Password)
             {
                 context.Rejected();
                 return;
